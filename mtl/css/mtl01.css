@@ -1,0 +1,111 @@
+@charset "utf-8";
+*{
+	margin: 0px;
+	padding: 0px;
+	
+}
+body{
+	background: url(../img/img/2.jpg);
+	background-size: 100%;
+}
+div:nth-child(1){/*div的第一个子类*/
+	background: url(../img/img/fsw.png);
+	width: 768px;
+	height: 768px;
+	/*margin: 20px auto;居中*/
+	position: absolute;/*绝对定位*/
+	top: 0px;
+	left: 50%;
+	margin-left: -384px;
+	/*设置动画:名称 时间 类型(infinite无限循环) 运动类型（匀速）*/
+	animation: tv 10s infinite linear;
+}
+@keyframes tv{
+	from{}
+	to{transform: rotate(360deg);}
+	
+}
+div:nth-child(2){
+	background: url(../img/img/bracketsmall.png);
+	width: 247px;
+	height: 490px;
+	position: absolute;
+	top: 384px;
+	left: 50%;
+	margin-left: -125px;
+	/*调节层级关系,底层是0层*/
+	z-index: -1;
+}
+div:nth-child(3){
+	background: url(../img/img/bracket.png);
+	width: 358px;
+	height: 529px;
+	position: absolute;
+	top:384px;
+	left: 50%;
+	margin-left: -179px;
+	z-index: -2;
+}
+div:nth-child(4){
+	background: url(../img/img/big-title.png);
+	width: 577px;
+	height: 257px;
+	position: absolute;
+	top: 230px;
+	left: 50%;
+	margin-left: -288px;
+	
+}
+li{
+	width: 130px;
+	height: 170px;
+	list-style: none;/*去掉列表的小黑点*/
+	position: absolute;
+	animation: child 10s infinite linear;
+	/*调整旋转基点*/
+	transform-origin: 50% 30%;
+}
+@keyframes child{
+	from{}
+	to{transform: rotate(-360deg);}
+}
+li:nth-child(1){
+	background: url(../img/img/boy.png);
+	top: 100px;
+	left: 55px;
+}
+li:nth-child(2){
+	background: url(../img/img/dog.png);
+	top: 0px;
+	left: 319px;
+}
+li:nth-child(3){
+	background: url(../img/img/girl.png);
+	top: 85px;
+	left: 580px;
+}
+li:nth-child(4){
+	background: url(../img/img/girls.png);
+	top: 350px;
+	left: 665px;
+}
+li:nth-child(5){
+	background: url(../img/img/dog.png);
+	top: 350px;
+	left: 0px;
+}
+li:nth-child(6){
+	background: url(../img/img/hairboy.png);
+	left:90px;
+	top:596px;
+}
+li:nth-child(7){
+	background: url(../img/img/mimi.png);
+	top: 685px;
+	left: 327px;
+}
+li:nth-child(8){
+  background: url(../img/img/shamegirl.png);	
+  top:540px;
+  left: 590px;
+}
